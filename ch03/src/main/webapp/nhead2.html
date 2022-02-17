@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+* {margin:0; padding:0}
+
+body {
+	font-family: "맑은 고딕" 돋움; font-size: 0.75em;	color: #333;}
+.header {
+	width:800px;
+	height:100px;
+	margin: 50px auto;
+	background-color: #ddd;
+}
+
+.header .logo, .header .search-box{
+	float:left;
+}
+
+.header .logo {
+	font-size:0px;
+	width: 222px;
+	height: 52px;
+	background : #fff url("/ch03/images/nsplite.png") no-repeat 0 -158px / 457px 434px;
+}
+
+.green_window {
+	width:820px;
+	height:56px;
+	background-color: #ccc;
+	
+	
+}
+
+.green_window input, .green_window a {
+	display: block;
+}
+
+.green_window input, .green_window .btn-search, .green_window  a{
+	float: right;
+}
+
+.green_window #input-text{
+	width: 474px;
+	height:50px;
+	
+	
+}
+.header .search_area .input_text {
+	width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
+}
+</style>
+</head>
+<body>
+	<div class="header">
+		<h1 class="logo">네이버</h1>
+		
+		<div class="green_window">
+			<input type='text' id="query" placeholder="검색어를 입력해주세요."/>
+		</div>
+		<button id="search-btn" class="btn_submit">
+			<span class="blind">검색</span>
+			<span class="ico-search-submit"></span>
+		</button>
+		<a id="ke_kbd_btn" class="btn_keyboard">
+			<span class="blind">한글 입력기</span>
+			<span class="ico_keyboard"></span>
+		</a>
+		<div class="autocomplete">
+			<a id="nautocomplete" class="btn_arw _btn_arw fold">
+				<span class="blind">자동완성 레이어</span>
+				<span class="ico_arr"></span>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
