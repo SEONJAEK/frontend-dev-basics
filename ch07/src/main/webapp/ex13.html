@@ -6,6 +6,12 @@
 <script>
 $(function(){
 	setTimeout(function(){
+		//id속성이 있는 애
+		$("li[id]").css('color','red');
+		//class가 second인 애
+		$("li[class='second']").css('color','blue');
+		//class가 second가 아닌 애
+		$("li[class!='second']").css('font-weight','bold');
 	}, 1000);
 });
 </script>

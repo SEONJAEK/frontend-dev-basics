@@ -6,6 +6,10 @@
 <script>
 $(function(){
 	setTimeout(function(){
+		//내용 포함
+		$("li:contains('샘플')").css('color','red');
+		//자식 element태그 가지고 있는 것
+		$("li:has('strong')").css('color','blue');
 	}, 1000);
 });
 </script>

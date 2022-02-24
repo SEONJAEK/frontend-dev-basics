@@ -15,12 +15,15 @@ window.addEventListener('load', function() {
 });
 
 // 2. DOm이 로딩된 시점 : jQuery 함수를 사용하는 방법1
+// $("#header") -> jquery 확장객체
 $(document).ready(function() {
 	var $obj = $("#header");
 	console.log($obj.length);
 });
 
 // 3. DOM이 로딩된 시점 : jQueyry 함수를 사용하는 방법2
+//돔이 완료된 시점 select가능
+//DOM API를 감춰버림
 $(function() {
 	var $obj = $("#header");
 	
@@ -31,6 +34,18 @@ $(function() {
 	
 	console.log($obj[0]);
 });
+
+
+//선재 뭐가 달라
+var idx = 10; 
+alert(idx);
+console.log(typeof(idx));
+
+var $idx = 20;
+alert($idx);
+console.log(typeof($idx));
+
+
 
 </script>
 </head>
