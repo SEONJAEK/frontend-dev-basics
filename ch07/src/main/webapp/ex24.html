@@ -6,13 +6,15 @@
 <script>
 $(function(){
 	setTimeout(function(){
+		$("#p2 strong").prependTo("#p1");
 	}, 1000);
 });
 </script>
 </head>
 <body>
-	<h1>DOM 조작 API - prependTo()</h1>
+	<h1>DOM 조작 API - prependTo() : 이동</h1>
 	
+	<!-- prepend:안에다가 붙이는 것 -->
 	<p id="p1">EFGHIJKLMNOPQRSTUVWXYZ</p>
 	<p id="p2"><strong>ABCD</strong></p>
 </body>

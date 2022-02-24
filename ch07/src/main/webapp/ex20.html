@@ -6,13 +6,17 @@
 <script>
 $(function(){
 	setTimeout(function(){
-		
+		//tagging을 붙이는 작업을 랜더링이라 한다.
+		//랜더링:서버로부터 HTML 파일을 받아 브라우저에 뿌려주는 과정
+		var html = "<strong>"+"가나다라"+"</strong>";
+		//rendering된 html을 붙인다.
+		$("#p1").prepend(html);
 	}, 1000);
 });
 </script>
 </head>
 <body>
-	<h1>DOM 조작 API - prepend()</h1>
+	<h1>DOM 조작 API - prepend(): 생성</h1>
 	
 	<p id="p1">
 		마바사아자차카타파하
