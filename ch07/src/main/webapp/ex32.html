@@ -5,8 +5,29 @@
 <script type="text/javascript" src="./jquery/jquery-3.6.0.js"></script>
 <script type="text/javascript">
 $(function() {
-	setTimeout(function(){
-	}, 2000);
+		setTimeout(function(){
+			/*
+			$("h2 a").attr('href','http://www.poscoict.com');
+			$("h2 a").attr('target','_blank'); //새탭에서 열림
+			$("h2 a").attr('title','우리회사 좋은 회사');
+			$("h2 a").css('font-size','우리회사 좋은 회사');
+			
+		}, 2000);
+		*/
+		
+		//함수체인
+		$("h2 a").attr('href','http://www.poscoict.com')
+			.attr('target','_blank') //새탭에서 열림
+			.attr('title','우리회사 좋은 회사')
+			.css('font-size','0.75em');
+		}, 2000);
+		
+		$("h2 a")
+			.attr({
+				href: 'http://www.poscoict.com',
+				target: '_blank',
+				fontSize: '0.75em'
+			})
 });  
 </script>
 </head>
@@ -14,7 +35,7 @@ $(function() {
 	<h1>DOM 조작 API - attr()</h1>
 
 	<h2>
-		<a href="">우리회사</a>
+		<a href="" >우리회사</a>
 	</h2>
 </body>
 </html>
