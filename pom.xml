@@ -12,6 +12,8 @@
 		<project.reporting.outputEncodnig>utf-8</project.reporting.outputEncodnig>
 	</properties>	
 	
+	
+	
 	<build>
 		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
 		<resources>
@@ -70,5 +72,6 @@
 		<module>ch05</module>
 		<module>ch06</module>
 		<module>ch07</module>
+		<module>ch08</module>
 	</modules>
 </project>

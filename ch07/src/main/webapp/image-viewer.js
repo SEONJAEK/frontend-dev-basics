@@ -131,6 +131,11 @@ var imageViewer ={
 	init: function(){
 		$(function(){
 			$("#btn-change").click(this._changeImage.bind(this));
+			$(".image-viewer img").click(this._changeImage.bind(this));
+			$("#btn-slideshow").click(this._slideShow.bind(this));
+			
+			// 첫 번째 이미지 선택
+			this._changeImage();
 		})
 	}
 }
