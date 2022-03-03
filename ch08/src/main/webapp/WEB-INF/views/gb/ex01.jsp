@@ -17,11 +17,7 @@ var render = function(vo) {
 			"<strong></strong>" +
 			"<a href='' data-no='" + vo.no + "'>삭제</a>" + 
 			"</li>";
-			//add
-			@RequestMapping("/ex01")
-			public String ex01() {
-				return "gb/ex01";
-			}
+			
 	 return html;		
 }
 
